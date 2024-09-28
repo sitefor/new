@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Корзина</h1>
+    <div id="cart"></div>
+
+    <h2>Оформление заказа</h2>
+    <form id="orderForm">
+        <label>Имя: <input type="text" id="name"></label><br>
+        <label>Фамилия: <input type="text" id="surname"></label><br>
+        <label>Телефон: <input type="text" id="phone"></label><br>
+        <label>Email: <input type="email" id="email"></label><br>
+        <label>Предпочтительный способ связи: 
+            <select id="preferredContact">
+                <option value="phone">Телефон</option>
+                <option value="email">Email</option>
+            </select>
+        </label><br>
+        <button type="button" onclick="submitOrder()">Оформить заказ</button>
+    </form>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
